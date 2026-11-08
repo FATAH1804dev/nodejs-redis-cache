@@ -18,7 +18,7 @@ export const adapter = new PrismaMariaDb({
   user: requireEnv("DATABASE_USER"),
   password: requireEnv("DATABASE_PASSWORD"),
   database: requireEnv("DATABASE_NAME"),
-  connectionLimit: 5,
+  connectionLimit: 30,
 });
 // const prisma = new PrismaClient({
 //   adapter,
